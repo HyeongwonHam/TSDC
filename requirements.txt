@@ -1,0 +1,5 @@
+# Versions used for the paper results (Python 3.12).
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.17.1
+torch==2.5.1

@@ -1,0 +1,98 @@
+split,route_group,trace,device,physical_session_group
+source_train,2023/train/2023-09-05-23-07-us-ca-routen,2023/train/2023-09-05-23-07-us-ca-routen/pixel5,pixel5,collection:0d06d7d741455254|Pixel 5
+source_train,2023/train/2023-09-05-23-07-us-ca-routen,2023/train/2023-09-05-23-07-us-ca-routen/pixel7pro,pixel7pro,collection:0d06d7d741455254|Pixel 7 Pro
+source_train,2023/train/2023-09-06-00-01-us-ca-routen,2023/train/2023-09-06-00-01-us-ca-routen/pixel4xl,pixel4xl,collection:101061ba70d8fef5|Pixel 4 XL
+source_train,2023/train/2023-09-06-00-01-us-ca-routen,2023/train/2023-09-06-00-01-us-ca-routen/pixel5a,pixel5a,collection:101061ba70d8fef5|Pixel 5
+source_train,2023/train/2023-09-06-00-01-us-ca-routen,2023/train/2023-09-06-00-01-us-ca-routen/pixel6pro,pixel6pro,collection:101061ba70d8fef5|Pixel 6 Pro
+source_train,2023/train/2023-09-06-00-01-us-ca-routen,2023/train/2023-09-06-00-01-us-ca-routen/sm-g955f,sm-g955f,collection:101061ba70d8fef5|sm-g955f
+source_train,2023/train/2023-05-24-20-26-us-ca-sjc-ge2,2023/train/2023-05-24-20-26-us-ca-sjc-ge2/pixel5,pixel5,collection:11ea4b6ce99da1c2|Pixel 5
+source_train,2023/train/2023-05-24-20-26-us-ca-sjc-ge2,2023/train/2023-05-24-20-26-us-ca-sjc-ge2/pixel7pro,pixel7pro,collection:11ea4b6ce99da1c2|Pixel 7 Pro
+source_train,2023/train/2023-09-05-20-13-us-ca,2023/train/2023-09-05-20-13-us-ca/pixel5,pixel5,collection:150f22ddf85c2e9f|Pixel 5
+source_train,2023/train/2023-09-05-20-13-us-ca,2023/train/2023-09-05-20-13-us-ca/pixel7pro,pixel7pro,collection:150f22ddf85c2e9f|Pixel 7 Pro
+source_train,2022/train/2021-12-07-US-LAX-2,2022/train/2021-12-07-US-LAX-2/GooglePixel5,GooglePixel5,collection:1cbcbe8b488d4253|Pixel 5
+source_train,2022/train/2021-12-07-US-LAX-2,2022/train/2021-12-07-US-LAX-2/GooglePixel6Pro,GooglePixel6Pro,collection:1cbcbe8b488d4253|Pixel 6 Pro
+source_train,2022/train/2021-12-07-US-LAX-2,2022/train/2021-12-07-US-LAX-2/SamsungGalaxyS20Ultra,SamsungGalaxyS20Ultra,collection:1cbcbe8b488d4253|Samsung S20 Ultra
+source_train,2022/train/2021-12-07-US-LAX-2,2022/train/2021-12-07-US-LAX-2/XiaomiMi8,XiaomiMi8,collection:1cbcbe8b488d4253|Xiaomi Mi 8
+source_train,2023/train/2023-05-25-19-10-us-ca-sjc-be2,2023/train/2023-05-25-19-10-us-ca-sjc-be2/pixel5,pixel5,collection:1d57408558321f2d|Pixel 5
+source_train,2023/train/2023-05-25-19-10-us-ca-sjc-be2,2023/train/2023-05-25-19-10-us-ca-sjc-be2/pixel7pro,pixel7pro,collection:1d57408558321f2d|Pixel 7 Pro
+source_train,2023/train/2023-05-25-19-10-us-ca-sjc-be2,2023/train/2023-05-25-19-10-us-ca-sjc-be2/sm-s908b,sm-s908b,collection:1d57408558321f2d|Samsung S22 Ultra
+source_train,2023/train/2023-09-07-22-48-us-ca-routebc2,2023/train/2023-09-07-22-48-us-ca-routebc2/pixel4xl,pixel4xl,collection:22a2f85b81f7389a|Pixel 4 XL
+source_train,2023/train/2023-09-07-22-48-us-ca-routebc2,2023/train/2023-09-07-22-48-us-ca-routebc2/pixel5a,pixel5a,collection:22a2f85b81f7389a|Pixel 5
+source_train,2022/train/2021-12-07-US-LAX-1,2022/train/2021-12-07-US-LAX-1/GooglePixel5,GooglePixel5,collection:22c258f041f5da7e|Pixel 5
+source_train,2022/train/2021-12-07-US-LAX-1,2022/train/2021-12-07-US-LAX-1/GooglePixel6Pro,GooglePixel6Pro,collection:22c258f041f5da7e|Pixel 6 Pro
+source_train,2022/train/2021-12-07-US-LAX-1,2022/train/2021-12-07-US-LAX-1/SamsungGalaxyS20Ultra,SamsungGalaxyS20Ultra,collection:22c258f041f5da7e|Samsung S20 Ultra
+source_train,2022/train/2021-12-07-US-LAX-1,2022/train/2021-12-07-US-LAX-1/XiaomiMi8,XiaomiMi8,collection:22c258f041f5da7e|Xiaomi Mi 8
+source_train,2023/train/2023-05-26-18-51-us-ca-sjc-ge2,2023/train/2023-05-26-18-51-us-ca-sjc-ge2/pixel5,pixel5,collection:2916f1bf5aee2d48|Pixel 5
+source_train,2023/train/2023-05-26-18-51-us-ca-sjc-ge2,2023/train/2023-05-26-18-51-us-ca-sjc-ge2/pixel7pro,pixel7pro,collection:2916f1bf5aee2d48|Pixel 7 Pro
+source_train,2023/train/2023-05-26-18-50-us-ca-sjc-ge2,2023/train/2023-05-26-18-50-us-ca-sjc-ge2/sm-s908b,sm-s908b,collection:2916f1bf5aee2d48|Samsung S22 Ultra
+source_train,2023/train/2022-04-01-18-22-us-ca-lax-t,2023/train/2022-04-01-18-22-us-ca-lax-t/pixel5,pixel5,collection:2d5ef75a03452076|Pixel 5
+source_train,2023/train/2022-04-01-18-22-us-ca-lax-t,2023/train/2022-04-01-18-22-us-ca-lax-t/pixel6pro,pixel6pro,collection:2d5ef75a03452076|Pixel 6 Pro
+source_train,2023/train/2022-04-01-18-22-us-ca-lax-t,2023/train/2022-04-01-18-22-us-ca-lax-t/mi8,mi8,collection:2d5ef75a03452076|Xiaomi Mi 8
+source_train,2023/train/2022-07-26-21-01-us-ca-sjc-s,2023/train/2022-07-26-21-01-us-ca-sjc-s/pixel5,pixel5,collection:2e21431840cea567|Pixel 5
+source_train,2023/train/2022-07-26-21-01-us-ca-sjc-s,2023/train/2022-07-26-21-01-us-ca-sjc-s/samsunga325g,samsunga325g,collection:2e21431840cea567|samsunga325g
+source_train,2023/train/2022-08-04-20-07-us-ca-sjc-q,2023/train/2022-08-04-20-07-us-ca-sjc-q/pixel5,pixel5,collection:2efdaea15a2bf055|Pixel 5
+source_train,2023/train/2022-08-04-20-07-us-ca-sjc-q,2023/train/2022-08-04-20-07-us-ca-sjc-q/mi8,mi8,collection:2efdaea15a2bf055|Xiaomi Mi 8
+source_train,2023/train/2022-08-04-20-07-us-ca-sjc-q,2023/train/2022-08-04-20-07-us-ca-sjc-q/sm-a325f,sm-a325f,collection:2efdaea15a2bf055|sm-a325f
+source_train,2023/train/2023-09-06-18-47-us-ca,2023/train/2023-09-06-18-47-us-ca/pixel4xl,pixel4xl,collection:2f96a47e0ac82a4e|Pixel 4 XL
+source_train,2023/train/2023-09-06-18-47-us-ca,2023/train/2023-09-06-18-47-us-ca/pixel6pro,pixel6pro,collection:2f96a47e0ac82a4e|Pixel 6 Pro
+source_train,2021/train/2021-04-29-US-SJC-2,2021/train/2021-04-29-US-SJC-2/Pixel4,Pixel4,collection:63e179aa3a56f795|Pixel 4
+source_train,2021/train/2021-04-29-US-SJC-2,2021/train/2021-04-29-US-SJC-2/SamsungS20Ultra,SamsungS20Ultra,collection:63e179aa3a56f795|Samsung S20 Ultra
+source_train,2023/train/2021-12-07-22-21-us-ca-lax-g,2023/train/2021-12-07-22-21-us-ca-lax-g/pixel5,pixel5,collection:8b91a588a500dd46|Pixel 5
+source_train,2023/train/2021-12-07-22-21-us-ca-lax-g,2023/train/2021-12-07-22-21-us-ca-lax-g/pixel6pro,pixel6pro,collection:8b91a588a500dd46|Pixel 6 Pro
+source_train,2023/train/2021-12-07-22-21-us-ca-lax-g,2023/train/2021-12-07-22-21-us-ca-lax-g/sm-g988b,sm-g988b,collection:8b91a588a500dd46|Samsung S20 Ultra
+source_train,2023/train/2021-12-07-22-21-us-ca-lax-g,2023/train/2021-12-07-22-21-us-ca-lax-g/mi8,mi8,collection:8b91a588a500dd46|Xiaomi Mi 8
+source_train,2023/train/2023-09-05-20-59-us-ca,2023/train/2023-09-05-20-59-us-ca/pixel4xl,pixel4xl,collection:9ae33b123e322570|Pixel 4 XL
+source_train,2023/train/2023-09-05-20-59-us-ca,2023/train/2023-09-05-20-59-us-ca/pixel5a,pixel5a,collection:9ae33b123e322570|Pixel 5
+source_train,2023/train/2022-02-24-18-29-us-ca-lax-o,2023/train/2022-02-24-18-29-us-ca-lax-o/pixel5,pixel5,collection:a04ab2dd7cd9975f|Pixel 5
+source_train,2023/train/2022-02-24-18-29-us-ca-lax-o,2023/train/2022-02-24-18-29-us-ca-lax-o/pixel6pro,pixel6pro,collection:a04ab2dd7cd9975f|Pixel 6 Pro
+source_train,2023/train/2022-02-24-18-29-us-ca-lax-o,2023/train/2022-02-24-18-29-us-ca-lax-o/mi8,mi8,collection:a04ab2dd7cd9975f|Xiaomi Mi 8
+source_train,2023/train/2023-09-07-22-47-us-ca-routebc2,2023/train/2023-09-07-22-47-us-ca-routebc2/pixel6pro,pixel6pro,collection:a3814f9794a32980|Pixel 6 Pro
+source_train,2023/train/2021-12-07-19-22-us-ca-lax-d,2023/train/2021-12-07-19-22-us-ca-lax-d/pixel5,pixel5,collection:a64affffb5052b8c|Pixel 5
+source_train,2023/train/2021-12-07-19-22-us-ca-lax-d,2023/train/2021-12-07-19-22-us-ca-lax-d/pixel6pro,pixel6pro,collection:a64affffb5052b8c|Pixel 6 Pro
+source_train,2023/train/2021-12-07-19-22-us-ca-lax-d,2023/train/2021-12-07-19-22-us-ca-lax-d/sm-g988b,sm-g988b,collection:a64affffb5052b8c|Samsung S20 Ultra
+source_train,2023/train/2021-12-07-19-22-us-ca-lax-d,2023/train/2021-12-07-19-22-us-ca-lax-d/mi8,mi8,collection:a64affffb5052b8c|Xiaomi Mi 8
+source_train,2023/train/2023-06-06-23-26-us-ca-sjc-he2,2023/train/2023-06-06-23-26-us-ca-sjc-he2/sm-a226b,sm-a226b,collection:a9f9848c953c7ed0|sm-a226b
+source_train,2023/train/2023-09-06-18-04-us-ca,2023/train/2023-09-06-18-04-us-ca/pixel5,pixel5,collection:b7669ede672410e2|Pixel 5
+source_train,2023/train/2023-09-06-18-04-us-ca,2023/train/2023-09-06-18-04-us-ca/pixel7pro,pixel7pro,collection:b7669ede672410e2|Pixel 7 Pro
+source_train,2023/train/2023-09-06-18-04-us-ca,2023/train/2023-09-06-18-04-us-ca/sm-s908b,sm-s908b,collection:b7669ede672410e2|Samsung S22 Ultra
+source_train,2023/train/2023-05-25-20-11-us-ca-sjc-he2,2023/train/2023-05-25-20-11-us-ca-sjc-he2/pixel5,pixel5,collection:be66bb617123e1c6|Pixel 5
+source_train,2023/train/2023-05-25-20-11-us-ca-sjc-he2,2023/train/2023-05-25-20-11-us-ca-sjc-he2/pixel7pro,pixel7pro,collection:be66bb617123e1c6|Pixel 7 Pro
+source_train,2023/train/2023-05-25-20-11-us-ca-sjc-he2,2023/train/2023-05-25-20-11-us-ca-sjc-he2/sm-s908b,sm-s908b,collection:be66bb617123e1c6|Samsung S22 Ultra
+source_train,2022/train/2021-12-08-US-LAX-3,2022/train/2021-12-08-US-LAX-3/GooglePixel5,GooglePixel5,collection:bf6b0f7373d24bb4|Pixel 5
+source_train,2023/train/2021-12-08-18-52-us-ca-lax-b,2023/train/2021-12-08-18-52-us-ca-lax-b/pixel6pro,pixel6pro,collection:bf6b0f7373d24bb4|Pixel 6 Pro
+source_train,2022/train/2021-12-08-US-LAX-3,2022/train/2021-12-08-US-LAX-3/SamsungGalaxyS20Ultra,SamsungGalaxyS20Ultra,collection:bf6b0f7373d24bb4|Samsung S20 Ultra
+source_train,2023/train/2021-12-08-18-52-us-ca-lax-b,2023/train/2021-12-08-18-52-us-ca-lax-b/mi8,mi8,collection:bf6b0f7373d24bb4|Xiaomi Mi 8
+source_train,2023/train/2023-09-06-22-49-us-ca-routebb1,2023/train/2023-09-06-22-49-us-ca-routebb1/pixel7pro,pixel7pro,collection:c87dfa9aaa2d0731|Pixel 7 Pro
+source_train,2023/train/2023-09-06-22-49-us-ca-routebb1,2023/train/2023-09-06-22-49-us-ca-routebb1/sm-s908b,sm-s908b,collection:c87dfa9aaa2d0731|Samsung S22 Ultra
+source_train,2021/train/2021-04-22-US-SJC-1,2021/train/2021-04-22-US-SJC-1/Pixel4,Pixel4,collection:d59072d9c9436c0f|Pixel 4
+source_train,2021/train/2021-04-22-US-SJC-1,2021/train/2021-04-22-US-SJC-1/SamsungS20Ultra,SamsungS20Ultra,collection:d59072d9c9436c0f|Samsung S20 Ultra
+source_train,2023/train/2021-12-09-17-06-us-ca-lax-e,2023/train/2021-12-09-17-06-us-ca-lax-e/pixel5,pixel5,collection:f150dcaf9328a6af|Pixel 5
+source_train,2023/train/2021-12-09-17-06-us-ca-lax-e,2023/train/2021-12-09-17-06-us-ca-lax-e/pixel6pro,pixel6pro,collection:f150dcaf9328a6af|Pixel 6 Pro
+source_train,2022/train/2021-12-09-US-LAX-2,2022/train/2021-12-09-US-LAX-2/SamsungGalaxyS20Ultra,SamsungGalaxyS20Ultra,collection:f150dcaf9328a6af|Samsung S20 Ultra
+source_train,2022/train/2021-12-09-US-LAX-2,2022/train/2021-12-09-US-LAX-2/XiaomiMi8,XiaomiMi8,collection:f150dcaf9328a6af|Xiaomi Mi 8
+source_train,2023/train/2021-12-08-20-28-us-ca-lax-c,2023/train/2021-12-08-20-28-us-ca-lax-c/pixel5,pixel5,collection:f35e4180ffcc148b|Pixel 5
+source_train,2023/train/2021-12-08-20-28-us-ca-lax-c,2023/train/2021-12-08-20-28-us-ca-lax-c/pixel6pro,pixel6pro,collection:f35e4180ffcc148b|Pixel 6 Pro
+source_train,2023/train/2021-12-08-20-28-us-ca-lax-c,2023/train/2021-12-08-20-28-us-ca-lax-c/sm-g988b,sm-g988b,collection:f35e4180ffcc148b|Samsung S20 Ultra
+source_train,2022/train/2021-12-08-US-LAX-5,2022/train/2021-12-08-US-LAX-5/XiaomiMi8,XiaomiMi8,collection:f35e4180ffcc148b|Xiaomi Mi 8
+source_train,2021/train/2021-04-28-US-SJC-1,2021/train/2021-04-28-US-SJC-1/Pixel4,Pixel4,collection:f63e9e6667bd8f53|Pixel 4
+source_train,2021/train/2021-04-28-US-SJC-1,2021/train/2021-04-28-US-SJC-1/SamsungS20Ultra,SamsungS20Ultra,collection:f63e9e6667bd8f53|Samsung S20 Ultra
+source_val,2022/train/2021-08-04-US-SJC-1,2022/train/2021-08-04-US-SJC-1/GooglePixel4,GooglePixel4,collection:0c5c51d87c0038fb|Pixel 4
+source_val,2022/train/2021-08-04-US-SJC-1,2022/train/2021-08-04-US-SJC-1/GooglePixel5,GooglePixel5,collection:0c5c51d87c0038fb|Pixel 5
+source_val,2023/train/2021-08-04-20-40-us-ca-sjc-c,2023/train/2021-08-04-20-40-us-ca-sjc-c/sm-g988b,sm-g988b,collection:0c5c51d87c0038fb|Samsung S20 Ultra
+source_val,2023/train/2020-12-10-22-52-us-ca-sjc-c,2023/train/2020-12-10-22-52-us-ca-sjc-c/pixel4,pixel4,collection:61ae1f1b08e253c9|Pixel 4
+source_val,2023/train/2020-12-10-22-52-us-ca-sjc-c,2023/train/2020-12-10-22-52-us-ca-sjc-c/pixel4xl,pixel4xl,collection:61ae1f1b08e253c9|Pixel 4 XL
+source_val,2023/train/2020-12-10-22-52-us-ca-sjc-c,2023/train/2020-12-10-22-52-us-ca-sjc-c/pixel5,pixel5,collection:61ae1f1b08e253c9|Pixel 5
+source_val,2023/train/2020-12-10-22-52-us-ca-sjc-c,2023/train/2020-12-10-22-52-us-ca-sjc-c/mi8,mi8,collection:61ae1f1b08e253c9|Xiaomi Mi 8
+source_val,2023/train/2021-12-08-17-22-us-ca-lax-a,2023/train/2021-12-08-17-22-us-ca-lax-a/pixel5,pixel5,collection:81471b930b8dc32d|Pixel 5
+source_val,2023/train/2021-12-08-17-22-us-ca-lax-a,2023/train/2021-12-08-17-22-us-ca-lax-a/pixel6pro,pixel6pro,collection:81471b930b8dc32d|Pixel 6 Pro
+source_val,2022/train/2021-12-08-US-LAX-1,2022/train/2021-12-08-US-LAX-1/SamsungGalaxyS20Ultra,SamsungGalaxyS20Ultra,collection:81471b930b8dc32d|Samsung S20 Ultra
+source_val,2022/train/2021-12-08-US-LAX-1,2022/train/2021-12-08-US-LAX-1/XiaomiMi8,XiaomiMi8,collection:81471b930b8dc32d|Xiaomi Mi 8
+source_val,2022/train/2020-12-10-US-SJC-1,2022/train/2020-12-10-US-SJC-1/GooglePixel4,GooglePixel4,collection:8f1d08b8975ea066|Pixel 4
+source_val,2022/train/2020-12-10-US-SJC-1,2022/train/2020-12-10-US-SJC-1/GooglePixel4XL,GooglePixel4XL,collection:8f1d08b8975ea066|Pixel 4 XL
+source_val,2023/train/2020-12-10-22-17-us-ca-sjc-c,2023/train/2020-12-10-22-17-us-ca-sjc-c/mi8,mi8,collection:8f1d08b8975ea066|Xiaomi Mi 8
+source_val,2023/train/2023-09-07-18-59-us-ca,2023/train/2023-09-07-18-59-us-ca/pixel5,pixel5,collection:96cd4b3cd575d81e|Pixel 5
+source_val,2023/train/2023-09-07-18-59-us-ca,2023/train/2023-09-07-18-59-us-ca/pixel7pro,pixel7pro,collection:96cd4b3cd575d81e|Pixel 7 Pro
+source_val,2023/train/2023-09-07-19-33-us-ca,2023/train/2023-09-07-19-33-us-ca/pixel4xl,pixel4xl,collection:e8166b6e8353308d|Pixel 4 XL
+source_val,2023/train/2023-09-07-19-33-us-ca,2023/train/2023-09-07-19-33-us-ca/pixel5a,pixel5a,collection:e8166b6e8353308d|Pixel 5
+source_val,2023/train/2023-09-07-19-33-us-ca,2023/train/2023-09-07-19-33-us-ca/pixel6pro,pixel6pro,collection:e8166b6e8353308d|Pixel 6 Pro
+source_val,2023/train/2023-09-07-19-33-us-ca,2023/train/2023-09-07-19-33-us-ca/sm-g955f,sm-g955f,collection:e8166b6e8353308d|sm-g955f
