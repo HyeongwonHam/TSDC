@@ -11,7 +11,9 @@ For every adjacent-epoch pair of the same satellite signal, a small network pred
 correction μ to the Android pseudorange rate (PRR) and a Laplace scale b. Training uses
 the TDCP-referenced target
 
-    y = (ADR_k - ADR_{k-1}) / Δt - PRR_k
+```math
+y_k^s = \frac{\mathrm{ADR}_k^s - \mathrm{ADR}_{k-1}^s}{\Delta t} - \mathrm{PRR}_k^s
+```
 
 built from screened accumulated delta range (ADR). ADR is used only for this target:
 inference reads neither ADR nor carrier phase. The corrected range change
