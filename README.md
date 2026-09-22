@@ -18,23 +18,23 @@ inference reads neither ADR nor carrier phase. The corrected range change
 (PRR_k + μ) Δt enters a horizontal-position-and-clock factor graph around the nominal
 (WLS) trajectory with factor scale σ = max(1 m, 5 b Δt), solved by Huber IRLS.
 
-## Scope of this repository
+## Scope
 
-This first release covers the GSDC part of the main paper:
+This repository covers the GSDC experiments of the paper:
 
 - GSDC 2021 conversion to the common `device_gnss.csv` format
 - adjacent-epoch pair construction, TDCP-referenced targets and the 68 input features
 - the 68→192→192→96→2 network, Laplace NLL, training and checkpoint selection (seeds 42–46)
 - inference with the output gates |μ| ≤ 3 m/s and b ≤ 1 m/s, run on data with ADR columns removed
 - endpoint, averaged and TSDC temporal measurements; screened TDCP-FGO; the factor graph
-- the score (P50 + P95)/2, physical-phone-session and leakage-group aggregation, bootstrap and Wilcoxon statistics
+- the score (P50 + P95)/2, aggregation by physical phone session and leakage group, bootstrap and Wilcoxon statistics
 
-It reproduces Tables 2–4 and the GSDC scores of Sections 5.1–5.4. Not included: the
-μ − μ̄ control and the paired intervals of Section 5.4, the device-level breakdown in
-Section 5.3 (Online Resource 1, Section S6.4), the source-validation searches
-(the selected settings are fixed in the code), the construction of the split, the
-external datasets (WHU, Hervanta, TU Wien), the post-hoc analyses of Section 6 and the
-Online Resource experiments.
+The code reproduces Tables 2–4 and the GSDC scores of Sections 5.1–5.4. It does not include:
+
+- the μ − μ̄ control and the paired intervals of Section 5.4
+- the device-level analyses of Section 5.3 and Online Resource 1, Section S6.4
+- the source-validation searches (the selected settings are fixed in the code) and the construction of the split
+- the external datasets (WHU, Hervanta, TU Wien), the post-hoc analyses of Section 6 and the other Online Resource experiments
 
 | Paper | Code |
 |---|---|
@@ -43,7 +43,7 @@ Online Resource experiments.
 | network, log b clamp [−5, 2], Laplace NLL | `tsdc/model.py` |
 | AdamW, batch 8192, ≤ 60 epochs, patience 10, source-validation MAE selection | `tsdc/train.py` |
 | output gates, ADR-free inference | `tsdc/inference.py` |
-| endpoint / average / TSDC measurements, σ rule, screened TDCP, common mask | `tsdc/factors.py` |
+| endpoint / average / TSDC measurements, σ rule, screened TDCP, shared ADR-valid intervals | `tsdc/factors.py` |
 | factor coefficients, priors, clock constraints, Huber IRLS, block-tridiagonal solver | `tsdc/fgo.py` |
 | score, sessions, leakage groups, bootstrap, Wilcoxon | `tsdc/metrics.py` |
 
@@ -98,6 +98,9 @@ The GSDC results in the paper use the archived split in `splits/`. The split is 
 - `route_group_mapping.csv`: physical collection and leakage group for each of the 141 routes; used for session and group statistics
 - `source_trace_manifest.csv`: the 77 training and 20 validation traces, one per physical phone session
 
+A physical phone session is one phone model on one physical drive, with repeated GSDC releases of
+the drive merged. A leakage group joins routes that overlap; groups are the units of the paired statistics.
+
 ## Training
 
 ```bash
@@ -116,17 +119,19 @@ python scripts/evaluate_gsdc.py --data-root data/gsdc --workers 12
 ```
 
 This evaluates the 216 target-evaluation traces for WLS, Endpoint and Averaged Doppler
-FGO, screened TDCP-FGO and, for each checkpoint, TSDC-FGO and the same-mask controls. It
-writes `work/eval/trace_detail.csv` and prints the tables. Seed 42 is the representative
-run. Use `--summary-only` to reprint the tables from an existing `trace_detail.csv`.
-The run takes 1.5 to 2 hours with 12 workers on a 16-core CPU. Other checkpoint file
-names can be given with `--checkpoint-dir` and `--checkpoint-pattern` (default
-`tsdc_seed{seed}.pth`). Inference runs on the CPU by default
-(`--cuda` for GPU). Multithreaded CPU and GPU inference can change μ and b in the last
-float32 bit; in our checks this moved individual trace scores by less than 1e-7 m. The 2021 files
-written by `convert_gsdc2021.py` differ from those used for the paper by at most 4e-9 m
-in the nominal positions, which moves 2021 trace scores by less than 1e-6 m; the tables
-are unchanged at the reported precision.
+FGO, screened TDCP-FGO and, for each checkpoint, TSDC-FGO and its controls. It writes
+`work/eval/trace_detail.csv` and prints the tables; seed 42 is the representative run.
+In the output, "TSDC mask" marks controls run on the same satellite–epoch intervals as
+TSDC (Sections 5.2–5.4), and "common ADR-valid mask" marks the shared ADR-valid intervals
+of Table 2. The run takes 1.5 to 2 hours with 12 workers on a 16-core CPU.
+`--summary-only` reprints the tables from an existing `trace_detail.csv`, and
+`--checkpoint-dir` and `--checkpoint-pattern` (default `tsdc_seed{seed}.pth`) select other checkpoints.
+
+Inference runs on the CPU by default (`--cuda` for GPU). Multithreaded CPU and GPU
+inference can change μ and b in the last float32 bit; in our checks this changed individual
+trace scores by less than 1e-7 m. The 2021 files written by `convert_gsdc2021.py` differ
+from those used for the paper by at most 4e-9 m in the nominal positions, which changes
+2021 trace scores by less than 1e-6 m. The tables are unchanged at the reported precision.
 
 ## Expected main results
 
@@ -148,16 +153,16 @@ Paired TSDC-FGO differences over 58 leakage groups (Table 4; 20,000 bootstrap re
 | Averaged Doppler FGO | 96/164 | −0.0577 | [−0.0947, −0.0265] | 0.0020 |
 | Screened ADR-derived TDCP-FGO | 125/164 | −0.2113 | [−0.3283, −0.1005] | 6.7e−6 |
 
-The printed table also includes endpoint Doppler on the TSDC mask (Section 5.3):
+The printed table also includes endpoint Doppler on the same intervals as TSDC (Section 5.3):
 159/164 sessions, −0.8805 m, 95% CI [−1.0024, −0.7605].
 
-Seed-42 controls: identical satellite–epoch factors (Table 2) give 4.2696 / 3.8583 / 3.8674 m
-for endpoint / screened TDCP / TSDC. On the TSDC acceptance mask (Section 5.2), endpoint,
-averaged and TSDC give 4.5171 / 3.7640 / 3.7028 m.
+Seed-42 controls: on the shared ADR-valid intervals (Table 2), endpoint / screened TDCP / TSDC
+score 4.2696 / 3.8583 / 3.8674 m; on the intervals used by TSDC (Section 5.2), endpoint /
+averaged / TSDC score 4.5171 / 3.7640 / 3.7028 m.
 
 ## Tests
 
-A few regression tests on synthetic inputs (requires `pytest`):
+Regression tests on synthetic inputs (requires `pytest`):
 
 ```bash
 python -m pytest tests
@@ -175,4 +180,4 @@ Citation details will be added once the paper is published.
 
 ## License
 
-License: MIT.
+MIT. See `LICENSE`.

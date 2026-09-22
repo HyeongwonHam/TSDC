@@ -36,7 +36,7 @@ def nominal_geometry(wls: pd.DataFrame) -> tuple[dict[int, int], np.ndarray, lis
 
 # Adjacent-epoch pairs of the same satellite signal on consecutive nominal epochs,
 # and the network input of each pair. ADR is read only to flag pairs that also pass
-# the screened-TDCP checks (common ADR-valid mask of Table 2).
+# the screened-TDCP checks (the shared ADR-valid intervals of Table 2).
 def build_pair_contexts(
     raw: pd.DataFrame,
     wls: pd.DataFrame,
@@ -194,11 +194,11 @@ def make_factor(context: dict[str, Any], range_change_m: float, sigma_m: float) 
 
 
 def learned_sigma_m(context: dict[str, Any], floor_m: float, multiplier: float) -> float:
-    # sigma = max(1 m, 5 b dt): b is a rate (m/s), dt converts it to metres.
+    # sigma = max(1 m, 5 b dt): b is a rate (m/s), dt converts it to meters.
     return max(floor_m, multiplier * max(float(context["scale_mps"]), 1e-4) * float(context["dt_s"]))
 
 
-# Endpoint, average and TSDC on the TSDC acceptance mask (|mu| <= 3 m/s, b <= 1 m/s).
+# Endpoint, average and TSDC on the intervals that pass the TSDC gates (|mu| <= 3 m/s, b <= 1 m/s).
 def tsdc_mask_factors(
     contexts: list[dict[str, Any]],
     max_abs_mu_mps: float = MAX_ABS_MU_MPS,

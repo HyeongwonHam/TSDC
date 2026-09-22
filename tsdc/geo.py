@@ -47,7 +47,7 @@ def ecef_to_enu_matrix(lat_deg: float, lon_deg: float) -> np.ndarray:
     )
 
 
-# Local east/north metres about the first nominal epoch; the FGO corrections are
+# Local east/north meters about the first nominal epoch; the FGO corrections are
 # added in this frame and mapped back to latitude/longitude.
 def latlon_to_local_m(
     lat: pd.Series, lon: pd.Series, lat0: float, lon0: float

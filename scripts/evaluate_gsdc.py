@@ -73,7 +73,7 @@ def evaluate_trace(trace_string: str) -> list[dict[str, Any]]:
 
     for seed, bundle in _BUNDLES:
         # TSDC is predicted from the table without ADR/carrier-phase columns. The ADR
-        # table is walked only for the common ADR-valid mask; its network inputs must
+        # table is walked only for the shared ADR-valid intervals; its network inputs must
         # be identical, so the same predictions serve both.
         contexts, features = F.build_pair_contexts(drop_adr_columns(raw), wls, bundle)
         adr_contexts, adr_features = F.build_pair_contexts(raw, wls, bundle)
@@ -181,8 +181,8 @@ def main() -> None:
     parser.add_argument("--out-dir", default="work/eval")
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--max-traces", type=int, default=0)
-    # CPU inference reproduces the archived per-trace scores exactly; GPU inference
-    # changes mu and b in the last float32 bits (about 1e-8 m in the scores).
+    # Multithreaded CPU and GPU inference can change mu and b in the last float32 bit
+    # (below 1e-7 m in the trace scores in our checks).
     parser.add_argument("--cuda", action="store_true")
     parser.add_argument("--bootstrap-samples", type=int, default=20_000)
     parser.add_argument("--summary-only", action="store_true", help="re-summarize an existing trace_detail.csv")
